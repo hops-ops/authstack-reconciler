@@ -36,6 +36,7 @@ jobs:
 
   publish:
     needs: test
-    uses: unbounded-tech/workflows-containers/.github/workflows/publish.yaml@main
+    uses: unbounded-tech/workflows-containers/.github/workflows/publish.yaml@v1.8.0
     with:
       tag_branch_on_pr: true
+      platforms: linux/amd64,linux/arm64
